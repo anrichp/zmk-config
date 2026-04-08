@@ -76,7 +76,7 @@
 				left_symbol_layer {
 				bindings = <
 //    ┌─────┬─────┬─────┬─────┬─────┐           ┌─────┬─────┬─────┬─────┬─────┐
-//    │  !  │  "  │     │  $  │  %  │           │     │     │     │     │     │
+//    │  !  │  @  │     │  $  │  %  │           │     │     │     │     │     │
 //    ├─────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼─────┤
 //    │  {  │  }  │  (  │  )  │     │           │     │     │     │     │     │
 //    ├─────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼─────┤
@@ -84,10 +84,10 @@
 //    └─────┴─────┴─────┼─────┼─────┤           ├─────┼─────┼─────┴─────┴─────┘
 //                      │     │     │           │     │     │
 //                      └─────┴─────┘           └─────┴─────┘
-  &kp EXCLAMATION   &kp DOUBLE_QUOTES   &trans                 &kp DOLLAR              &kp PERCENT               &trans   &trans   &trans   &trans   &trans
-  &kp LEFT_BRACE    &kp RIGHT_BRACE     &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &trans                    &trans   &trans   &trans   &trans   &trans
-  &trans            &trans              &kp LEFT_BRACKET       &kp RIGHT_BRACKET       &trans                    &trans   &trans   &trans   &trans   &trans
-                                                               &trans                  &trans                    &trans   &trans
+  &kp EXCLAMATION   &kp AT_SIGN       &trans                 &kp DOLLAR              &kp PERCENT               &trans   &trans   &trans   &trans   &trans
+  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &trans                    &trans   &trans   &trans   &trans   &trans
+  &trans            &trans            &kp LEFT_BRACKET       &kp RIGHT_BRACKET       &trans                    &trans   &trans   &trans   &trans   &trans
+                                                             &trans                  &trans                    &trans   &trans
 					>;
 				};
 				mouse_layer {
