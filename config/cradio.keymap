@@ -26,14 +26,14 @@
 //    ┌────────────┬────────────────────┬────────┬────────┬──────┐           ┌──────────┬────────┬────────┬────────────────────┬────────────┐
 //    │     Q      │         W          │   F    │   P    │  B   │           │    J     │   L    │   U    │         Y          │     '      │
 //    ├────────────┼────────────────────┼────────┼────────┼──────┤           ├──────────┼────────┼────────┼────────────────────┼────────────┤
-//    │ &ht lsft A │       lt 2 R       │ lt 4 S │ lt 2 T │  G   │           │    M     │ lt 3 N │ lt 6 E │       lt 1 I       │ &ht rsft O │
+//    │ &ht lsft A │       lt 7 R       │ lt 4 S │ lt 2 T │  G   │           │    M     │ lt 3 N │ lt 6 E │       lt 1 I       │ &ht rsft O │
 //    ├────────────┼────────────────────┼────────┼────────┼──────┤           ├──────────┼────────┼────────┼────────────────────┼────────────┤
 //    │     Z      │ &ht left_CONTROL X │   C    │   D    │  V   │           │    K     │   H    │   ,    │ &ht rght_CONTROL . │     /      │
 //    └────────────┴────────────────────┴────────┼────────┼──────┤           ├──────────┼────────┼────────┴────────────────────┴────────────┘
 //                                               │  lgui  │ bspc │           │ lt 5 spc │        │
 //                                               └────────┴──────┘           └──────────┴────────┘
   &kp Q         &kp W                &kp F     &kp P      &kp B                  &kp J         &kp L     &kp U       &kp Y                   &kp SQT
-  &ht LSHFT A   &lt 2 R              &lt 4 S   &lt 2 T    &kp G                  &kp M         &lt 3 N   &lt 6 E     &lt 1 I                 &ht RSHIFT O
+  &ht LSHFT A   &lt 7 R              &lt 4 S   &lt 2 T    &kp G                  &kp M         &lt 3 N   &lt 6 E     &lt 1 I                 &ht RSHIFT O
   &kp Z         &ht LEFT_CONTROL X   &kp C     &kp D      &kp V                  &kp K         &kp H     &kp COMMA   &ht RIGHT_CONTROL DOT   &kp FSLH
                                                &kp LGUI   &kp BSPC               &lt 5 SPACE   &trans
             >;
@@ -140,6 +140,22 @@
                                                    &trans           &trans                        &trans   &trans
 					>;
 				};
-
+				hypr_layer {
+				bindings = <
+//    ┌──────┬─────┬─────┬─────┬──────┐           ┌──────┬─────────┬─────────┬─────────┬──────┐
+//    │      │     │     │     │      │           │      │ lgui(7) │ lgui(8) │ lgui(9) │      │
+//    ├──────┼─────┼─────┼─────┼──────┤           ├──────┼─────────┼─────────┼─────────┼──────┤
+//    │      │     │     │     │      │           │      │ lgui(1) │ lgui(2) │ lgui(3) │      │
+//    ├──────┼─────┼─────┼─────┼──────┤           ├──────┼─────────┼─────────┼─────────┼──────┤
+//    │ boot │     │     │     │      │           │      │ lgui(4) │ lgui(5) │ lgui(6) │ boot │
+//    └──────┴─────┴─────┼─────┼──────┤           ├──────┼─────────┼─────────┴─────────┴──────┘
+//                       │     │ lsft │           │ lsft │         │
+//                       └─────┴──────┘           └──────┴─────────┘
+  &trans        &trans   &trans   &trans   &trans                       &trans           &kp LG(NUMBER_7)   &kp LG(NUMBER_8)   &kp LG(NUMBER_9)   &trans
+  &trans        &trans   &trans   &trans   &trans                       &trans           &kp LG(NUMBER_1)   &kp LG(NUMBER_2)   &kp LG(NUMBER_3)   &trans
+  &bootloader   &trans   &trans   &trans   &trans                       &trans           &kp LG(NUMBER_4)   &kp LG(NUMBER_5)   &kp LG(NUMBER_6)   &bootloader
+                                  &trans   &kp LEFT_SHIFT               &kp LEFT_SHIFT   &trans
+					>;
+				};
 		};
 };
