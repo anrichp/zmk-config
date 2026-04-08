@@ -110,7 +110,7 @@
 				thumb_layer {
 				bindings = <
 //    ┌────────────────┬─────┬─────┬───────────────┬─────┐           ┌─────┬─────┬─────┬─────┬──────┐
-//    │                │     │  :  │      esc      │     │           │     │     │     │     │      │
+//    │                │     │  :  │      esc      │     │           │     │     │     │     │ del  │
 //    ├────────────────┼─────┼─────┼───────────────┼─────┤           ├─────┼─────┼─────┼─────┼──────┤
 //    │ &studio_unlock │     │     │      ent      │     │           │     │     │     │     │      │
 //    ├────────────────┼─────┼─────┼───────────────┼─────┤           ├─────┼─────┼─────┼─────┼──────┤
@@ -118,7 +118,7 @@
 //    └────────────────┴─────┴─────┼───────────────┼─────┤           ├─────┼─────┼─────┴─────┴──────┘
 //                                 │ lgui(lsft(S)) │ tab │           │     │     │
 //                                 └───────────────┴─────┘           └─────┴─────┘
-  &trans           &trans   &kp COLON   &kp ESCAPE        &trans                &trans   &trans   &trans   &trans   &trans
+  &trans           &trans   &kp COLON   &kp ESCAPE        &trans                &trans   &trans   &trans   &trans   &kp DELETE
   &studio_unlock   &trans   &trans      &kp ENTER         &trans                &trans   &trans   &trans   &trans   &trans
   &bootloader      &trans   &trans      &kp EXCLAMATION   &trans                &trans   &trans   &trans   &trans   &bootloader
                                         &kp LG(LS(S))     &kp TAB               &trans   &trans
